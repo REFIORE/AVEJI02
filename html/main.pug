@@ -1,0 +1,114 @@
+mixin projects__card(image)
+    li.projects__item
+        .projects__img
+            img(src=image, alt="tv")
+        .projects-desc
+            p.projects__text.text Тумба под телевизор
+                .arrow
+                    img(src="../media/icons/arrow.png", alt="arrow")
+mixin reviews__card(subtitle, text)
+    li.reviews__item
+        article.reviews-card
+            .reviews-card__icon
+                img(src="../media/icons/icon.png", alt="кавычки")
+            h3.reviews__subtitle.text=subtitle
+            p.reviews__text.text=text
+main.main
+    section.intro
+        .container
+            .intro-wrap.grid
+                h1.title.title-lg Эксклюзивная и нестандартная мебель для дома
+                p.intro__text Мы можем произвести любую мебель для вашего проекта и найти производственное решение любой задумки.
+                a.btn(href="#feedback") заказать проект
+                .img
+                    img(src="../media/hero/2.jpg", alt="livingroom")
+                .img.desktop
+                    img(src="../media/hero/1.jpg", alt="livingroom")
+    section.about
+        .container
+            .about-wrap.grid
+                h2.about__title.heading
+                    span.heading-mobile Более 5 лет создаем мебель для вашего комфорта
+                .about-inner.col
+                    .about-box-text
+                        p.about__text.text Мы — команда профессионалов, которые могут произвести любую мебель для вашего проекта, а также найти производственное решение любой задумки.
+                        p.about__text.text Наша основная цель — реализовывать самые смелые задумки, и делать это качественно и аккуратно.
+                        p.about__text.text В качестве материалов мы используем натуральные — стекло, дерево, бетон, камень, металл и эпоксидную смолу.
+                    ul.benefits
+                        li.benefits__item
+                            p.benefits__subtitle 1 год
+                            p.benefits__text.text гарантии на всю продукцию
+                        li.benefits__item
+                            p.benefits__subtitle.heading-md-24 300+
+                            p.benefits__text.text выполненных проектов
+                        li.benefits__item
+                            p.benefits__subtitle.heading-md-24 15 дней
+                            p.benefits__text.text срок производства
+    section.steps
+        .container
+            .steps-wrap.grid
+                h2.steps__title.heading Как мы работаем
+                .steps-inner.col
+                    p.steps__text.text Алгоритм работы с нами для удобства и понимания проекта
+                    ul.steps-list
+                        li.steps__item.grid-col-6
+                            h3.subheading Идея
+                            p.text Клиент приходит к нам с идеей. Это может быть изображение/ эскиз или другой референс. А мы думаем над тем, как это реализовать, делаем технические чертежи и предлагаем решения по материалам.
+                        li.steps__item.grid-col-6
+                            h3.subheading Техническое задание
+                            p.text Вместе с клиентом формулируем корректное ТЗ, которое включает в себя визуализацию изделия, эскизный чертёж с габаритами, информацию по материалам и отделке, срок реализации проекта и другие обязательные пункты.
+                        li.steps__item.grid-col-6
+                            h3.subheading Коммерческое предложение
+                            p.text Предпочтительно используем натуральные материалы. Но любую смету можем оптимизировать, упростив материалы или конструктив. Сможем подстроиться под бюджет клиента и согласуем коммерческое предложение.
+                        li.steps__item.grid-col-6
+                            h3.subheading Подготовка рабочего проекта
+                            p.text Создадим рабочую документацию и чертежи. Это фундамент качественного производства. На этом этапе утверждаем с клиентом все габариты и материалы, чертежи и приступаем к производству.
+                        li.steps__item.grid-col-6
+                            h3.subheading Производство и монтаж
+                            p.text Производство занимает от 15 рабочих дней, в зависимости от сложности и объёма. Монтажом тоже занимаемся самостоятельно. Ведь мы это сделаем быстро и аккуратно.
+    section.projects
+        .container
+            h2.heading.heading-indent Проекты
+        .container.projects-container
+            ul.projects-list
+                +projects__card('../media/projects/1.jpg')
+                +projects__card('../media/projects/2.jpg')
+                +projects__card('../media/projects/3.jpg')
+                +projects__card('../media/projects/4.jpg')
+                +projects__card('../media/projects/5.jpg')
+                +projects__card('../media/projects/6.jpg')
+    section.reviews
+        .container
+            h2.heading.heading-indent Отзывы
+            ul.reviews-wrap
+                +reviews__card('Игорь Антонов', 'Обратилась к Aveji по рекомендации. Команда сразу поняла, какой дизайн я хочу. Предоставили несколько вариантов и в течение недели сделали наброски. Итог понравился, все на высшем уровне.')
+                +reviews__card('Ольга Иванова', 'После пары заказов у компании Aveji убедилась, что за мебелью теперь только к ним. Абсолютно любые решения, в любых размерах и форм-факторе, то что нужно!')
+                +reviews__card('Аркадий Макаров', 'Aveji — настоящие профессионалы своего дела. Быстро поняли мою задумку, сделали дизайн, согласовали и изготовили мебель. А потом еще и бесплатно все собрали на месте. Большое спасибо!')
+    section.contact
+        .container
+            .contact-wrap.grid
+                .contact__img
+                    img(src="../media/form/footer.jpg", alt="bedroom")
+                .contact-desc.col
+                    .contact-desc-top
+                        h2.contact__title.heading.heading-indent Хотите заказать проект?
+                        p.contact__text.text Оставьте заявку, и мы вам перезвоним
+                    form.form(action="#")
+                        .form-inner
+                            .form-group
+                                input.input(type="text", id="name")
+                                label.label.text(for="name") Имя
+                            .form-group
+                                input.input(type="email", id="email")
+                                label.label.text(for="email") E-mail
+                            .form-group
+                                input.input(type="tel", id="phone")
+                                label.label.text(for="phone") Телефон
+                        button.btn-primary.text Отправить заявку
+                    ul.contact-download
+                        li.contact-download-item
+                            a.contact-download-link(href="#")
+                                img(src="../media/icons/appstore.png", alt="app store")
+                        li.contact-download-item
+                            a.contact-download-link(href="#")
+                                img(src="../media/icons/googleplay.png", alt="google play")

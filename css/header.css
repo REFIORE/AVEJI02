@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-top: 12px;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header_wrap {
+    width: 100%;
+    display: flex;
+    display: grid;
+    justify-content: start;
+    align-items: flex-start;
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.logo {
+    width: 60px;
+    height: 62px;
+}
+
+.header__logo {
+    width: 60px;
+    height: 62px;
+    top: 12px;
+    left: 32px;
+    display: flex;
+    justify-content: left;
+    display: flex;
+}
+
+.nav {
+    grid-column-start: 13;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav__link {
+    position: relative;
+}
+
+.phone {
+    display: grid;
+    text-align: right;
+    grid-column-start: 16;
+    grid-column-end: 19;
+}

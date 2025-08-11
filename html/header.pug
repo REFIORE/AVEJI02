@@ -1,0 +1,24 @@
+mixin custom-select(name)
+  .header_select
+    .header_select-header
+      span.header_select-current=name
+header.header
+  .container
+    .header_wrap
+      a.logo(href='')
+        img.header__logo(src="../media/icons/logo.png", alt="Aveji")
+      .nav
+        ul.nav__list
+          li.nav__item
+            a.nav__link.link.text(href='#about') О нас
+          li.nav__item
+            a.nav__link.link.text(href='#works') Проекты
+          li.nav__item
+            a.nav__link.link.text(href='#') Материалы
+          li.nav__item
+            a.nav__link.link.text(href='#reviews') Отзывы
+      a.phone.text(href='tel:79999999999') +7 999 999 99 99
+      button.menu__btn
+        span
+        span
+        span

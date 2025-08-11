@@ -1,0 +1,154 @@
+.main {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.btn {
+    position: relative;
+    align-items: flex-end;
+    display: inline-flex;
+    text-transform: uppercase;
+    color: #212529;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: #CBC6B2;
+    transition-property: all;
+    transition-duration: 0.3;
+}
+
+
+.btn-primary {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0.75rem 1.25rem;
+    transition: 0.3s;
+    background: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212529;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+.btn-primary:is(:hover, :focus) {
+    background: #DDD7C0;
+}
+
+.btn-primary:is(:hover, :active, :focus) {
+    color: #212529;
+}
+
+.img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: block;
+    max-width: 100%;
+}
+
+.arrow {
+    width: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps__item {
+    border-bottom: 1px solid #212529;
+}
+
+
+.reviews-wrap {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat(auto-fit, minmax(min(21.25rem, 100%), 1fr));
+}
+
+.reviews__item {
+    background: #ffffff;
+    border: 1px solid #212529;
+}
+
+.reviews-card {
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reviews-card__icon {
+    width: 40px;
+    margin-bottom: 2rem;
+}
+
+.reviews__subtitle {
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.contact__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.input {
+    padding-top: 0.313rem;
+    padding-bottom: 0.75rem;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    border-bottom: 1px solid #212529;
+    transition: 0.3s;
+}
+
+.input:focus {
+    border-bottom: 1px solid #DDD7C0;
+}
+
+.label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transition: 0.3s;
+}
+
+.input:focus ~ .label, .input:valid {
+    top: -1rem;
+    font-size: 0.813rem;
+}
+
+.contact-download {
+    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.contact-download-item {
+    width: 121px;
+    height: 36px;
+}
+
+.benefits__subtitle {
+    margin: 0;
+}

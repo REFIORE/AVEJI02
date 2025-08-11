@@ -1,0 +1,41 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.menu .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    pointer-events: none;
+    background: rgba(33, 37, 41, 0.5);
+}
+
+.menu-content {
+    margin-left: auto;
+    height: 100%;
+    max-width: 19rem;
+    background: #ECECEC;
+    transform: translateX(100%);
+}
+
+.menu-wrap {
+    position: relative;
+    padding-top: 5.625rem;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}

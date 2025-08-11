@@ -1,0 +1,25 @@
+mixin menu__list(link, text)
+    li.menu__item
+        a.menu__link.heading-md-24(href=link)=text
+
+.menu
+    .overlay
+    .menu-content
+        .container
+            .menu-wrap
+                a.menu-logo(href="../media/icons/logo.png")
+                ul.menu-list
+                    +menu__list('#about', 'О нас')
+                    li.menu__item
+                        a.menu__link.heading-md-24(href='#works') Проекты
+                    li.menu__item
+                        a.menu__link.heading-md-24(href='#') Материалы
+                    li.menu__item
+                        a.menu__link.heading-md-24(href='#reviews') Отзывы
+                .menu-info
+                    a.phone.heading-md-24(href='tel:79999999999')
+                    ul.social-list
+                        li.social__item
+                            a.social__link.heading-md-24(href='#') ВКонтакте
+                        li.social__item
+                            a.social__link.heading-md-24(href='#') Телеграм
