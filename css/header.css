@@ -17,19 +17,11 @@
     grid-template-columns: repeat(18, 1fr);
 }
 
-.logo {
-    width: 60px;
-    height: 62px;
-}
-
 .header__logo {
-    width: 60px;
-    height: 62px;
     top: 12px;
     left: 32px;
     display: flex;
     justify-content: left;
-    display: flex;
 }
 
 .nav {
@@ -52,4 +44,9 @@
     text-align: right;
     grid-column-start: 16;
     grid-column-end: 19;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
 }
