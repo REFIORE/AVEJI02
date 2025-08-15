@@ -39,3 +39,11 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.menu-logo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    width: 1.625rem;
+}

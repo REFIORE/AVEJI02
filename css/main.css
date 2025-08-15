@@ -100,14 +100,14 @@
 }
 
 .form-group {
-    margin-bottom: 1.34rem;
+    margin-bottom: 1rem;
     position: relative;
 }
 
 .input {
-    padding-top: 0.313rem;
+    padding-top: 0.54rem;
     padding-bottom: 0.75rem;
-    width: 87.5%;
+    width: 100%;
     display: block;
     background: #ffffff;
     border-bottom: 1px solid #212529;
@@ -163,34 +163,6 @@
     width: 20.313rem;
 }
 
-.heading-indent {
-    margin-bottom: 2rem;
-}
-
-.projects__item {
-    flex: unset;
-    width: auto;
-    height: 580px;
-}
-
-.projects-desc {
-    transform: translateY(100%);
-    visibility: hidden;
-    opacity: 0;
-    padding: 0.75rem;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    background: rgba(33, 37, 41, 0.5);
-    justify-content: space-between;
-}
-
 .arrow {
-    width: 0.8rem;
-    display: flex;
-    justify-content: end;
+    width: 13px;
 }

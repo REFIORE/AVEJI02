@@ -39,13 +39,6 @@
     position: relative;
 }
 
-.phone {
-    display: grid;
-    text-align: right;
-    grid-column-start: 16;
-    grid-column-end: 19;
-}
-
 .logo {
     display: flex;
     justify-content: start;
