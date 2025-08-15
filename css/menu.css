@@ -22,6 +22,19 @@
     background: rgba(33, 37, 41, 0.5);
 }
 
+.menu.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu.open .overlay {
+    opacity: 1;
+}
+
+.menu.open .menu-content {
+    transform: translateX(0%);
+}
+
 .menu-content {
     margin-left: auto;
     height: 100%;
@@ -38,12 +51,4 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-}
-
-.menu-logo {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 1rem;
-    width: 1.625rem;
 }

@@ -1,7 +1,6 @@
 mixin menu__list(link, text)
     li.menu__item
         a.menu__link.heading-md-24(href=link)=text
-
 .menu
     .overlay
     .menu-content
@@ -10,12 +9,9 @@ mixin menu__list(link, text)
                 a.menu-logo(href="../media/icons/logo.png")
                 ul.menu-list
                     +menu__list('#about', 'О нас')
-                    li.menu__item
-                        a.menu__link.heading-md-24(href='#works') Проекты
-                    li.menu__item
-                        a.menu__link.heading-md-24(href='#') Материалы
-                    li.menu__item
-                        a.menu__link.heading-md-24(href='#reviews') Отзывы
+                    +menu__list('#works', 'Проекты')
+                    +menu__list('#', 'Материалы')
+                    +menu__list('#reviews', 'Отзывы')
                 .menu-info
                     a.phone.heading-md-24(href='tel:79999999999')
                     ul.social-list
