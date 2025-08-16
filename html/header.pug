@@ -2,6 +2,9 @@ mixin custom-select(name)
   .header_select
     .header_select-header
       span.header_select-current=name
+mixin menu__list(link, text)
+    li.menu__item
+        a.menu__link.heading-md-24(href=link)=text
 header.header
   .container
     .header_wrap

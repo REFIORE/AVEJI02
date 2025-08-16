@@ -196,7 +196,7 @@ img {
     .menu__btn.open span:first-child {
         top: unset;
         transform: rotate(45deg);
-    }    
+    }
 
     .menu__btn.open span:nth-child(2) {
         transform: rotate(-45deg);
