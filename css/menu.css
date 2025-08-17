@@ -4,7 +4,7 @@
 }
 
 .burger {
-  position: absolute;
+  position: fixed;
   right: max(15px, (100% - 1376px) / 2);
   top: 1.375rem;
   z-index: 5;
@@ -33,7 +33,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  border-radius: 10px;
+  border-radius: 50%;
   background: #000;
 }
 
