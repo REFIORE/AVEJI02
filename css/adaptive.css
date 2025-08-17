@@ -110,6 +110,14 @@ ul {
     font-family: "Roboto", sans-serif;
 }
 
+.text__mobile, .text__desc {
+    font-size: 1rem;
+    line-height: 140%;
+    color: #212529;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+
 form {
     margin: 0;
 }
@@ -127,6 +135,22 @@ img {
 
 
 @media screen and (min-width: 20rem) {
+    .text__mobile {
+        display: block;
+    }
+
+    .text__desc {
+        display: none;
+    }
+
+    .reviews__text {
+        display: none;
+    }
+
+    .reviews__text-mobile {
+        display: block;
+    }
+
     .header {
         padding-top: 0.5rem;
     }
@@ -541,6 +565,22 @@ img {
 
 
 @media screen and (min-width: 64rem) {
+    .text__mobile {
+        display: none;
+    }
+
+    .text__desc {
+        display: block;
+    }
+
+    .reviews__text {
+        display: block;
+    }
+
+    .reviews__text-mobile {
+        display: none;
+    }
+
     .link {
         position: relative;
     }
@@ -780,7 +820,12 @@ img {
         grid-column-end: 4;
     }
 
-    .steps .text {
+    .steps {
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+
+    .text__mobile, .text__desc {
         grid-column-start: 4;
         grid-column-end: 7;
     }
